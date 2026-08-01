@@ -13,3 +13,7 @@
 
 # apks pulled by get_apk.sh
 *.apk
+
+# extracted shared prefs
+*.tar.gz
+extracted_shared_prefs
