@@ -45,7 +45,20 @@ while [[ $# -gt 0 ]]; do
         ;;
         
         -h|--help)
-            echo "Usage..."
+            echo "Usage: $(basename "$0") <android|ios> [quantity] [options]
+
+Pull the most recent screenshot(s) from an Android or iOS device.
+
+Arguments:
+  android|ios       device platform (android via adb, ios via ssh)
+  quantity          number of screenshots to pull (default: 1)
+
+Options:
+  -a, --address     ssh address (required for ios)
+  -p, --port        ssh port (default: 22)
+  -u, --user        ssh user (default: mobile)
+  -v, --verbose     print extra info while running
+  -h, --help        show this help message"
             exit
         ;;
         *)
