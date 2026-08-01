@@ -10,3 +10,6 @@
 *.png
 *.jpg
 *.jpeg
+
+# apks pulled by get_apk.sh
+*.apk
